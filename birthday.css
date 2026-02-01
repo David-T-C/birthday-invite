@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #cfe9ff, #f8fbff, #e6f2ff);
+    min-height: 100vh; 
+    font-family: 'Georgia', serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('istockphoto-1178597934-612x612.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+img{
+    width: 180px;
+    height: 180px;
+    position: flex;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(111,168,255,0.3);
+
+}
+
+button{
+ background: linear-gradient(135deg, #6fa8ff, #4f83ff);
+    border-radius: 50px;
+    color: white;
+}
+
+.form-label{
+    color: #4a6fa5;
+    letter-spacing: 0.5px;
+}
+#name-input{
+    border-radius: 12px;
+    border: 1px solid #b5d9ff;
+    transition: 0.3s ease;
+}
+
+#number-input{
+    border-radius: 12px;
+    border: 1px solid #b5d9ff;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #6fa8ff;
+    box-shadow: 0 0 8px rgba(111,168,255,0.5);
+}
+.title{
+    font-size: clamp(2.5rem, 8vw, 4.5rem); /* scales between 2.5rem and 4.5rem */
+    font-weight: 600;
+    letter-spacing: 0.3rem;     
+    color: #6fa8ff;            
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+     text-shadow:  0 0 10px rgba(111, 168, 255, 0.4),
+        0 0 20px rgba(111, 168, 255, 0.2); ;
+        animation-name: fadeinup;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+       
+   
+
+}
+
+@keyframes fadeinup {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.subtitle{
+    text-align: center;
+    color: #71706E; 
+    font-style: italic;
+    letter-spacing: 0.15rem;
+    margin-bottom: 2rem;
+        font-size: clamp(1rem, 4vw, 1.5rem);
+
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(111,168,255,0.6);
+    transition: all 0.3s ease;
+}
+.container {
+    background: rgba(255,255,255,0.85);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(111,168,255,0.2);
+    max-width: 450px;
+    z-index: 2;
+     max-width: 450px; /* elegant width on desktop */
+    padding: 1.5rem;
+}
+input{
+    text-align: center;
+}
+.container {
+    position: relative;
+
+    /* background image + white overlay */
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85)
+        ),
+        url("pngtree-blue-stars-glitter-on-transparent-background-christmas-shiny-background-picture-image_15118921.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(111,168,255,0.2);
+
+    max-width: 450px;
+    z-index: 2;
+}
